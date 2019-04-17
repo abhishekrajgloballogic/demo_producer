@@ -1,0 +1,662 @@
+2019-04-17 12:28:14.561 ERROR 9296 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 12:28:14.576 ERROR 9296 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 12:28:14.820  INFO 9296 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 9296 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 12:28:14.820  INFO 9296 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 12:28:21.193  INFO 9296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 12:28:21.194  INFO 9296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 12:28:21.405  INFO 9296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 12:28:21.836  INFO 9296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 12:28:21.845  WARN 9296 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 12:28:22.839  INFO 9296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 12:28:23.198  INFO 9296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 12:28:23.481  INFO 9296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 12:28:23.481  INFO 9296 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 12:28:24.354  INFO 9296 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 12:28:25.109  INFO 9296 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 12:28:27.249  WARN 9296 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 12:28:27.553  INFO 9296 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 14.408 seconds (JVM running for 16.701)
+2019-04-17 12:44:01.533 ERROR 10292 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 12:44:01.549 ERROR 10292 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 12:44:01.689  INFO 10292 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 10292 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 12:44:01.689  INFO 10292 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 12:44:02.435  WARN 10292 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.gl.demo_producer.DemoProducerApplication]; nested exception is java.io.FileNotFoundException: class path resource [errormsg.properties] cannot be opened because it does not exist
+2019-04-17 12:44:02.502 ERROR 10292 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.gl.demo_producer.DemoProducerApplication]; nested exception is java.io.FileNotFoundException: class path resource [errormsg.properties] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.gl.demo_producer.DemoProducerApplication.main(DemoProducerApplication.java:10) [classes/:na]
+Caused by: java.io.FileNotFoundException: class path resource [errormsg.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.EncodedResource.getInputStream(EncodedResource.java:159) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:99) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:73) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:59) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.ResourcePropertySource.<init>(ResourcePropertySource.java:67) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.DefaultPropertySourceFactory.createPropertySource(DefaultPropertySourceFactory.java:37) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processPropertySource(ConfigurationClassParser.java:452) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:271) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:191) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 13 common frames omitted
+
+2019-04-17 12:44:29.933 ERROR 7976 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 12:44:29.933 ERROR 7976 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 12:44:30.058  INFO 7976 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 7976 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 12:44:30.058  INFO 7976 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 12:44:30.442  WARN 7976 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.gl.demo_producer.DemoProducerApplication]; nested exception is java.io.FileNotFoundException: class path resource [errormsg.properties] cannot be opened because it does not exist
+2019-04-17 12:44:30.754 ERROR 7976 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.gl.demo_producer.DemoProducerApplication]; nested exception is java.io.FileNotFoundException: class path resource [errormsg.properties] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.gl.demo_producer.DemoProducerApplication.main(DemoProducerApplication.java:10) [classes/:na]
+Caused by: java.io.FileNotFoundException: class path resource [errormsg.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.EncodedResource.getInputStream(EncodedResource.java:159) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:99) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.fillProperties(PropertiesLoaderUtils.java:73) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.PropertiesLoaderUtils.loadProperties(PropertiesLoaderUtils.java:59) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.ResourcePropertySource.<init>(ResourcePropertySource.java:67) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.core.io.support.DefaultPropertySourceFactory.createPropertySource(DefaultPropertySourceFactory.java:37) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processPropertySource(ConfigurationClassParser.java:452) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:271) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:191) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 13 common frames omitted
+
+2019-04-17 12:45:22.711 ERROR 5504 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 12:45:22.711 ERROR 5504 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 12:45:22.851  INFO 5504 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 5504 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 12:45:22.851  INFO 5504 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 12:45:24.975  INFO 5504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 12:45:24.975  INFO 5504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 12:45:25.116  INFO 5504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 12:45:25.375  INFO 5504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 12:45:25.375  WARN 5504 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 12:45:25.848  INFO 5504 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 12:45:25.911  INFO 5504 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 12:45:25.999  INFO 5504 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 12:45:26.014  INFO 5504 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 12:45:26.217  INFO 5504 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 12:45:28.643  INFO 5504 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 12:45:34.219  WARN 5504 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 12:45:34.628  INFO 5504 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 12.341 seconds (JVM running for 13.11)
+2019-04-17 12:45:49.141  INFO 5504 --- [http-nio-8087-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 12:45:50.107 ERROR 5504 --- [http-nio-8087-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.validation.ConstraintViolationException: Validation failed for classes [com.gl.demo_producer.entity.User] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=name, rootBeanClass=class com.gl.demo_producer.entity.User, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]] with root cause
+
+javax.validation.ConstraintViolationException: Validation failed for classes [com.gl.demo_producer.entity.User] during persist time for groups [javax.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='must not be null', propertyPath=name, rootBeanClass=class com.gl.demo_producer.entity.User, messageTemplate='{javax.validation.constraints.NotNull.message}'}
+]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.validate(BeanValidationEventListener.java:140) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.cfg.beanvalidation.BeanValidationEventListener.onPreInsert(BeanValidationEventListener.java:80) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.preInsert(EntityIdentityInsertAction.java:197) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:75) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:645) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:282) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:263) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:317) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:332) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:289) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:196) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:127) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:192) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:135) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:62) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:799) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:784) ~[hibernate-core-5.3.9.Final.jar:5.3.9.Final]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.sun.proxy.$Proxy97.persist(Unknown Source) ~[na:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:308) ~[spring-orm-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.sun.proxy.$Proxy97.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:489) ~[spring-data-jpa-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359) ~[spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200) ~[spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644) ~[spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608) ~[spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:138) ~[spring-data-jpa-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.6.RELEASE.jar:2.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.sun.proxy.$Proxy99.save(Unknown Source) ~[na:na]
+	at com.gl.demo_producer.service.UserService.saveUser(UserService.java:29) ~[classes/:na]
+	at com.gl.demo_producer.service.UserService$$FastClassBySpringCGLIB$$29623895.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at com.gl.demo_producer.service.UserService$$EnhancerBySpringCGLIB$$e948c845.saveUser(<generated>) ~[classes/:na]
+	at com.gl.demo_producer.controller.UserController.saveUser(UserController.java:18) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:678) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_201]
+
+2019-04-17 12:46:43.113 ERROR 10160 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 12:46:43.113 ERROR 10160 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 12:46:43.238  INFO 10160 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 10160 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 12:46:43.238  INFO 10160 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 12:46:45.320  INFO 10160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 12:46:45.320  INFO 10160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 12:46:45.465  INFO 10160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 12:46:45.727  INFO 10160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 12:46:45.727  WARN 10160 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 12:46:46.266  INFO 10160 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 12:46:46.341  INFO 10160 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 12:46:46.419  INFO 10160 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 12:46:46.419  INFO 10160 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 12:46:46.634  INFO 10160 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 12:46:46.807  INFO 10160 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 12:46:49.014  WARN 10160 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 12:46:49.274  INFO 10160 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 6.688 seconds (JVM running for 7.429)
+2019-04-17 12:46:53.409  INFO 10160 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 12:53:55.428 ERROR 11128 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 12:53:55.460 ERROR 11128 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 12:53:55.582  INFO 11128 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 11128 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 12:53:55.597  INFO 11128 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 12:53:57.653  INFO 11128 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 12:53:57.653  INFO 11128 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 12:53:57.842  INFO 11128 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 12:53:58.272  INFO 11128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 12:53:58.287  WARN 11128 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 12:53:58.883  INFO 11128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 12:53:58.964  INFO 11128 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 12:53:59.027  INFO 11128 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 12:53:59.060  INFO 11128 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 12:53:59.306  INFO 11128 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 12:53:59.620  INFO 11128 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 12:54:01.964  WARN 11128 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 12:54:02.304 ERROR 11128 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8087]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at com.gl.demo_producer.DemoProducerApplication.main(DemoProducerApplication.java:10) [classes/:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_201]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_201]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_201]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_201]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_201]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	... 14 common frames omitted
+
+2019-04-17 12:54:02.304  INFO 11128 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-04-17 12:54:02.306 ERROR 11128 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8087 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8087, or configure this application to listen on another port.
+
+2019-04-17 12:54:02.337  INFO 11128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-17 12:54:02.353  INFO 11128 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-17 12:54:18.407 ERROR 1356 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 12:54:18.410 ERROR 1356 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 12:54:18.597  INFO 1356 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 1356 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 12:54:18.597  INFO 1356 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 12:54:20.868  INFO 1356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 12:54:20.868  INFO 1356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 12:54:20.999  INFO 1356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 12:54:21.252  INFO 1356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 12:54:21.268  WARN 1356 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 12:54:21.714  INFO 1356 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 12:54:21.776  INFO 1356 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 12:54:21.856  INFO 1356 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 12:54:21.856  INFO 1356 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 12:54:22.097  INFO 1356 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 12:54:22.269  INFO 1356 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 12:54:24.324  WARN 1356 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 12:54:24.605  INFO 1356 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 6.675 seconds (JVM running for 7.405)
+2019-04-17 12:54:28.286  INFO 1356 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 12:55:05.164 ERROR 8080 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 12:55:05.164 ERROR 8080 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 12:55:05.289  INFO 8080 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 8080 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 12:55:05.289  INFO 8080 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 12:55:07.425  INFO 8080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 12:55:07.425  INFO 8080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 12:55:07.567  INFO 8080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 12:55:07.815  INFO 8080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 12:55:07.831  WARN 8080 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 12:55:08.269  INFO 8080 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 12:55:08.332  INFO 8080 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 12:55:08.409  INFO 8080 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 12:55:08.409  INFO 8080 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 12:55:08.612  INFO 8080 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 12:55:08.784  INFO 8080 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 12:55:11.146  WARN 8080 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 12:55:11.413  INFO 8080 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 6.738 seconds (JVM running for 7.446)
+2019-04-17 12:55:16.707  INFO 8080 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 12:57:54.906 ERROR 11056 --- [Test worker] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 12:57:54.906 ERROR 11056 --- [Test worker] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 12:57:54.985  INFO 11056 --- [Test worker] c.g.d.DemoProducerApplicationTests       : Starting DemoProducerApplicationTests on DEL1-DHP-31609 with PID 11056 (started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 12:57:54.985  INFO 11056 --- [Test worker] c.g.d.DemoProducerApplicationTests       : No active profile set, falling back to default profiles: default
+2019-04-17 12:57:56.675  INFO 11056 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 12:57:56.675  WARN 11056 --- [Test worker] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 12:57:57.192  INFO 11056 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 12:57:57.254  INFO 11056 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 12:57:57.324  INFO 11056 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 12:57:57.324  INFO 11056 --- [Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 12:57:57.530  INFO 11056 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 12:57:57.686  INFO 11056 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 12:58:00.411  WARN 11056 --- [Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 12:58:00.895  INFO 11056 --- [Test worker] c.g.d.DemoProducerApplicationTests       : Started DemoProducerApplicationTests in 6.253 seconds (JVM running for 7.596)
+2019-04-17 12:58:01.237  INFO 11056 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-04-17 12:58:01.237  INFO 11056 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-04-17 12:58:08.523 ERROR 1044 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 12:58:08.527 ERROR 1044 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 12:58:08.734  INFO 1044 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 1044 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 12:58:08.734  INFO 1044 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 12:58:10.754  INFO 1044 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 12:58:10.754  INFO 1044 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 12:58:10.912  INFO 1044 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 12:58:11.164  INFO 1044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 12:58:11.164  WARN 1044 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 12:58:11.629  INFO 1044 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 12:58:11.675  INFO 1044 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 12:58:11.753  INFO 1044 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 12:58:11.753  INFO 1044 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 12:58:11.971  INFO 1044 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 12:58:12.160  INFO 1044 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 12:58:14.049  WARN 1044 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 12:58:14.357  INFO 1044 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 6.432 seconds (JVM running for 7.125)
+2019-04-17 12:58:19.347  INFO 1044 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 13:00:10.255 ERROR 7428 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 13:00:10.255 ERROR 7428 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 13:00:10.342  INFO 7428 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 7428 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 13:00:10.343  INFO 7428 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 13:00:12.519  INFO 7428 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 13:00:12.519  INFO 7428 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 13:00:12.661  INFO 7428 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 13:00:12.916  INFO 7428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 13:00:12.916  WARN 7428 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 13:00:13.369  INFO 7428 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 13:00:13.417  INFO 7428 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 13:00:13.477  INFO 7428 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 13:00:13.478  INFO 7428 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 13:00:13.709  INFO 7428 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 13:00:13.881  INFO 7428 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 13:00:15.930  WARN 7428 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 13:00:16.208  INFO 7428 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 6.427 seconds (JVM running for 7.154)
+2019-04-17 13:00:20.274  INFO 7428 --- [http-nio-8087-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 13:03:19.260 ERROR 7708 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 13:03:19.260 ERROR 7708 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 13:03:19.432  INFO 7708 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 7708 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 13:03:19.432  INFO 7708 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 13:03:21.494  INFO 7708 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 13:03:21.495  INFO 7708 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 13:03:21.667  INFO 7708 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 13:03:21.934  INFO 7708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 13:03:21.934  WARN 7708 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 13:03:22.390  INFO 7708 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 13:03:22.437  INFO 7708 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 13:03:22.555  INFO 7708 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 13:03:22.571  INFO 7708 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 13:03:22.760  INFO 7708 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 13:03:22.935  INFO 7708 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 13:03:25.144  WARN 7708 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 13:03:25.411  INFO 7708 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 6.62 seconds (JVM running for 7.366)
+2019-04-17 13:03:29.564  INFO 7708 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 13:04:01.984 ERROR 10772 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 13:04:02.000 ERROR 10772 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 13:04:02.140  INFO 10772 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 10772 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 13:04:02.140  INFO 10772 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 13:04:04.159  INFO 10772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 13:04:04.159  INFO 10772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 13:04:04.315  INFO 10772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 13:04:04.559  INFO 10772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 13:04:04.560  WARN 10772 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 13:04:05.032  INFO 10772 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 13:04:05.094  INFO 10772 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 13:04:05.172  INFO 10772 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 13:04:05.172  INFO 10772 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 13:04:05.391  INFO 10772 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 13:04:05.597  INFO 10772 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 13:04:07.672  WARN 10772 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 13:04:07.952  INFO 10772 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 6.474 seconds (JVM running for 7.209)
+2019-04-17 13:04:11.830  INFO 10772 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 13:05:11.925 ERROR 9228 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 13:05:11.933 ERROR 9228 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 13:05:12.097  INFO 9228 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 9228 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 13:05:12.097  INFO 9228 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 13:05:14.171  INFO 9228 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 13:05:14.171  INFO 9228 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 13:05:14.327  INFO 9228 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 13:05:14.564  INFO 9228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 13:05:14.579  WARN 9228 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 13:05:15.025  INFO 9228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 13:05:15.072  INFO 9228 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 13:05:15.150  INFO 9228 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 13:05:15.165  INFO 9228 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 13:05:15.368  INFO 9228 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 13:05:15.559  INFO 9228 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 13:05:17.722  WARN 9228 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 13:05:17.987  INFO 9228 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 6.6 seconds (JVM running for 7.322)
+2019-04-17 13:05:22.739  INFO 9228 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 13:07:00.846 ERROR 5900 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 13:07:00.861 ERROR 5900 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 13:07:00.998  INFO 5900 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 5900 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 13:07:01.061  INFO 5900 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 13:07:03.230  INFO 5900 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 13:07:03.230  INFO 5900 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 13:07:03.387  INFO 5900 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 13:07:03.665  INFO 5900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 13:07:03.681  WARN 5900 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 13:07:04.089  INFO 5900 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 13:07:04.154  INFO 5900 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 13:07:04.232  INFO 5900 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 13:07:04.232  INFO 5900 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 13:07:04.403  INFO 5900 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 13:07:04.600  INFO 5900 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 13:07:06.588  WARN 5900 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 13:07:06.863  INFO 5900 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 6.438 seconds (JVM running for 7.181)
+2019-04-17 13:07:10.402  INFO 5900 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 13:09:03.453 ERROR 11028 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 13:09:03.453 ERROR 11028 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 13:09:03.593  INFO 11028 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 11028 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 13:09:03.593  INFO 11028 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 13:09:05.809  INFO 11028 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 13:09:05.809  INFO 11028 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 13:09:06.060  INFO 11028 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 13:09:06.263  INFO 11028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 13:09:06.263  WARN 11028 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 13:09:06.753  INFO 11028 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 13:09:06.815  INFO 11028 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 13:09:06.895  INFO 11028 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 13:09:06.895  INFO 11028 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 13:09:07.114  INFO 11028 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 13:09:07.333  INFO 11028 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 13:09:09.660  WARN 11028 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 13:09:10.015  INFO 11028 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 7.058 seconds (JVM running for 8.175)
+2019-04-17 13:09:13.938  INFO 11028 --- [http-nio-8087-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 13:10:47.764 ERROR 9748 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 13:10:47.767 ERROR 9748 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 13:10:47.927  INFO 9748 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 9748 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 13:10:47.928  INFO 9748 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 13:10:50.209  INFO 9748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 13:10:50.209  INFO 9748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 13:10:50.383  INFO 9748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 13:10:50.694  INFO 9748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 13:10:50.694  WARN 9748 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 13:10:51.155  INFO 9748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 13:10:51.218  INFO 9748 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 13:10:51.312  INFO 9748 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 13:10:51.312  INFO 9748 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 13:10:51.545  INFO 9748 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 13:10:51.703  INFO 9748 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 13:10:53.615  WARN 9748 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 13:10:53.963  INFO 9748 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 6.686 seconds (JVM running for 7.45)
+2019-04-17 13:11:01.932  INFO 9748 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 14:47:38.409 ERROR 3392 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 14:47:38.412 ERROR 3392 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 14:47:38.579  INFO 3392 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 3392 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 14:47:38.580  INFO 3392 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 14:47:41.263  INFO 3392 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 14:47:41.263  INFO 3392 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 14:47:41.529  INFO 3392 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 14:47:41.816  INFO 3392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 14:47:41.822  WARN 3392 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 14:47:42.401  INFO 3392 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 14:47:42.466  INFO 3392 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 14:47:42.580  INFO 3392 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 14:47:42.582  INFO 3392 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 14:47:42.840  INFO 3392 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 14:47:43.084  INFO 3392 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 14:47:46.293  WARN 3392 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 14:47:46.644  INFO 3392 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 8.985 seconds (JVM running for 9.794)
+2019-04-17 14:49:03.922 ERROR 2764 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 14:49:03.942 ERROR 2764 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 14:49:04.072  INFO 2764 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 2764 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 14:49:04.073  INFO 2764 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 14:49:06.458  INFO 2764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 14:49:06.459  INFO 2764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 14:49:06.626  INFO 2764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 14:49:06.894  INFO 2764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 14:49:06.898  WARN 2764 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 14:49:07.380  INFO 2764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 14:49:07.440  INFO 2764 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 14:49:07.537  INFO 2764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 14:49:07.539  INFO 2764 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 14:49:07.792  INFO 2764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 14:49:08.032  INFO 2764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 14:49:10.538  WARN 2764 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 14:49:10.908  INFO 2764 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 7.737 seconds (JVM running for 8.564)
+2019-04-17 14:49:30.371  INFO 2764 --- [http-nio-8087-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 14:55:42.319  WARN 2764 --- [http-nio-8087-exec-1] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+2019-04-17 14:56:37.150  WARN 2764 --- [http-nio-8087-exec-9] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+2019-04-17 14:58:54.176 ERROR 3352 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 14:58:54.180 ERROR 3352 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 14:58:54.340  INFO 3352 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 3352 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 14:58:54.341  INFO 3352 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 14:58:56.631  INFO 3352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 14:58:56.631  INFO 3352 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 14:58:56.896  INFO 3352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 14:58:57.134  INFO 3352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 14:58:57.140  WARN 3352 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 14:58:57.757  INFO 3352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 14:58:57.827  INFO 3352 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 14:58:57.931  INFO 3352 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 14:58:57.933  INFO 3352 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 14:58:58.219  INFO 3352 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 14:58:58.592  INFO 3352 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 14:59:01.459  WARN 3352 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 14:59:01.852  INFO 3352 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 8.332 seconds (JVM running for 9.396)
+2019-04-17 15:00:48.527  INFO 3352 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 15:35:05.096  WARN 3352 --- [http-nio-8087-exec-10] o.s.web.servlet.PageNotFound             : Request method 'DELETE' not supported
+2019-04-17 15:36:06.940 DEBUG 8328 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2019-04-17 15:36:06.980 ERROR 8328 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 15:36:06.981 ERROR 8328 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 15:36:07.136  INFO 8328 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 8328 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 15:36:07.137  INFO 8328 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 15:36:09.423  INFO 8328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 15:36:09.423  INFO 8328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 15:36:09.719  INFO 8328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 15:36:09.935  INFO 8328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 15:36:09.939  WARN 8328 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 15:36:10.460  INFO 8328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 15:36:10.524  INFO 8328 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 15:36:10.636  INFO 8328 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 15:36:10.639  INFO 8328 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 15:36:10.870  INFO 8328 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 15:36:11.139  INFO 8328 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 15:36:17.593  WARN 8328 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 15:36:17.961  INFO 8328 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 11.655 seconds (JVM running for 12.719)
+2019-04-17 15:36:58.396  INFO 8328 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-04-17 15:37:46.417  WARN 8328 --- [http-nio-8087-exec-6] o.s.web.servlet.PageNotFound             : Request method 'DELETE' not supported
+2019-04-17 15:40:37.114  WARN 8328 --- [http-nio-8087-exec-8] o.s.web.servlet.PageNotFound             : Request method 'DELETE' not supported
+2019-04-17 15:50:17.906 ERROR 10152 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.aristotle'
+2019-04-17 15:50:17.911 ERROR 10152 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level 'ALL' for 'com.next'
+2019-04-17 15:50:18.097  INFO 10152 --- [main] c.g.d.DemoProducerApplication            : Starting DemoProducerApplication on DEL1-DHP-31609 with PID 10152 (D:\GL_task\demo_producer\out\production\classes started by abhishek.raj1 in D:\GL_task\demo_producer)
+2019-04-17 15:50:18.098  INFO 10152 --- [main] c.g.d.DemoProducerApplication            : No active profile set, falling back to default profiles: default
+2019-04-17 15:50:20.287  INFO 10152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-04-17 15:50:20.288  INFO 10152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-17 15:50:20.531  INFO 10152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-04-17 15:50:20.740  INFO 10152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-04-17 15:50:20.745  WARN 10152 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-04-17 15:50:21.243  INFO 10152 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-04-17 15:50:21.307  INFO 10152 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-17 15:50:21.391  INFO 10152 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-17 15:50:21.393  INFO 10152 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-04-17 15:50:21.613  INFO 10152 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-17 15:50:21.837  INFO 10152 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-04-17 15:50:23.756  WARN 10152 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-04-17 15:50:24.114  INFO 10152 --- [main] c.g.d.DemoProducerApplication            : Started DemoProducerApplication in 6.824 seconds (JVM running for 7.789)
+2019-04-17 15:50:36.527  INFO 10152 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
